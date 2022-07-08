@@ -1,5 +1,6 @@
 /* eslint no-undef: 0 */
 /* eslint no-console: 0 */
+/* eslint no-plusplus: 0 */
 
 // eslint-disable-next-line no-unused-vars
 class Boundary {

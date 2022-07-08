@@ -1,20 +1,21 @@
 /* eslint no-undef: 0 */
 /* eslint no-console: 0 */
+/* eslint no-plusplus: 0 */
 
 // eslint-disable-next-line no-unused-vars
 class Ray {
-  constructor(x, y) {
+  constructor(pos, angle) {
     // the pos of the ray
-    this.pos = createVector(x, y);
+    this.pos = pos;
 
     // the direction the ray is pointing
-    this.dir = createVector();
+    this.dir = p5.Vector.fromAngle(angle);
   }
 
   // draws the ray
   show() {
     // sets the color for drawing the ray
-    stroke(255, 75, 75);
+    stroke(255);
 
     // starts a new drawing state
     push();
